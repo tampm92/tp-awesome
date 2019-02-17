@@ -1,0 +1,30 @@
+{
+  "name": "tp-nuxt-dashboard",
+  "version": "1.0.0",
+  "description": "TP nuxt dashboard",
+  "author": "tampm",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "cross-env NODE_ENV=staging nuxt build",
+    "start": "cross-env NODE_ENV=staging nuxt start",
+    "build-prod": "cross-env NODE_ENV=production nuxt build",
+    "start-prod": "cross-env NODE_ENV=production nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "cross-env": "^5.2.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.4.0",
+    "nuxt-i18n": "^5.8.3",
+    "sass-loader": "^7.1.0",
+    "simple-line-icons": "^2.4.1",
+    "vue-clickaway": "^2.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "webpack-requiredir": "^0.2.1"
+  }
+}
