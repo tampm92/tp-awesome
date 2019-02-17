@@ -97,6 +97,12 @@ exports.default = {
 
 ```
 
+- Use config: 
+
+```bash
+const CONFIG = require('./config').default.getConfig(process.env.NODE_ENV)
+```
+
 4. Add multiple languages
 
 - Install lib:
