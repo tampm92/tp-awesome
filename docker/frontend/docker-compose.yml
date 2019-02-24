@@ -1,0 +1,14 @@
+version: '3'
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  app:
+    container_name: docker_frontend
+    build:
+      context: ./
+    ports:
+      - "5000:80"
+    networks:
+      - app-tier
