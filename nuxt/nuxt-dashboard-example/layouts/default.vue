@@ -35,7 +35,7 @@
     },
     head () {
       return {
-        title: this.$t('home.SEO.title')
+        title: this.$t('global.SEO.title')
       }
     },
     data() {
