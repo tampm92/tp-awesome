@@ -1,0 +1,101 @@
+#DefaultFooter {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .8;
+    background: url(/images/Background_Circle.png);
+  }
+
+  ul>li>a {
+    padding: 10px 15px;
+  }
+
+
+  .logo-wrapper .icon {
+    color: #E45F74;
+  }
+
+  .logo {
+    display: block;
+    height: 50px;
+  }
+
+  .logo img {
+    height: 100%;
+    width: auto;
+  }
+
+  .newsletter {
+    margin: 20px 0;
+  }
+
+  .newsletter .title {
+    margin: 5px 0;
+  }
+
+  .newsletter .email-area {
+    position: relative;
+    width: 400px;
+    height: 55px;
+    margin: 20px auto;
+  }
+
+  .email-area .email-input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 100px;
+    padding: 0 70px 0 25px;
+    transition: all .2s;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, .2);
+  }
+
+  .email-area .email-input:focus {
+    box-shadow: 1px 15px 30px rgba(0, 0, 0, .3);
+  }
+
+  .email-area .submit-btn {
+    position: absolute;
+    right: 0;
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 100px;
+    background: #E55D73;
+    color: #fff;
+  }
+
+  .email-area .submit-btn:hover {
+    background: #000;
+    color: #E55D73;
+  }
+
+
+  .copyright {
+    padding: 20px 0 30px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    ul>li>a {
+      padding: 10px 7px;
+    }
+
+    .newsletter .email-area {
+      width: 90%;
+    }
+
+  }
+}
