@@ -93,4 +93,5 @@ export default class UserService extends BackendService {
     let data = response.data;
     return data;
   }
+}
 ```

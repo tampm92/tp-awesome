@@ -1,0 +1,32 @@
+{
+  "name": "atlasauthority-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "serverless": "^1.39.1",
+    "serverless-offline": "^4.9.2",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.29.6",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "axios": "^0.18.0",
+    "form-data": "^2.3.3",
+    "website-scraper": "^4.0.0",
+    "puppeteer": "^1.13.0",
+    "puppeteer-core": "^1.13.0",
+    "chrome-aws-lambda": "^1.13.0"
+  }
+}

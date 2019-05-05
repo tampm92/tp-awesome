@@ -13,7 +13,7 @@ yarn create nuxt-app <project-name>
 yarn run dev
 ```
 
-- Create file `main.scss` in folder `assets/scss`
+- Create file `style.scss` in folder `assets/scss`
 
 - Config style: SCSS, Bootstrap, [Bootstrap Vue](https://bootstrap-vue.js.org/docs/)
 
@@ -28,7 +28,7 @@ modules: [
 ],
 css: [
     /* Import Core SCSS */
-    { src: '~/assets/scss/main.scss', lang: 'scss' }
+    { src: '~/assets/scss/style.scss', lang: 'scss' }
 ],
 ```
 

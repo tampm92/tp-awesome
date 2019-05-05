@@ -13,8 +13,8 @@ yarn add --dev webpack-requiredir
 modules: [
     ['nuxt-i18n', {
         locales: CONFIG.locales,
-    defaultLocale: 'en',
-    vueI18n: {
+        defaultLocale: 'en',
+        vueI18n: {
             fallbackLocale: 'en'
         },
         lazy: true,

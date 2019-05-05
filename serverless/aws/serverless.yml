@@ -1,0 +1,44 @@
+service: atlasauthority-test
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-2
+  stage: ${opt:stage, self:custom.defaultStage}
+  profile: ${self:custom.profiles.${self:provider.stage}}
+  environment: #Global Environment variables
+    ${file(./src/configs/${self:provider.stage}.yml)}
+  timeout: 180
+  memorySize: 1536
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  defaultStage: dev
+  region: ${self:provider.region}
+  profiles:
+    dev: agileopsvn
+    prod: prodProfile
+  webpack:
+    webpackConfig: 'webpack.config.js' # name of webpack configuration file
+    includeModules: 
+      forceExclude:
+        - puppeteer
+    packager: 'npm' # package manager we use
+  serverless-offline:
+    noTimeout: true
+
+functions:
+  # home:
+  #   handler: src/handler.test
+  #   events:
+  #     - http: ANY /
+  #     - http: 'ANY {proxy+}'
+  createIssueJiraWebhooks:
+    handler: src/handler.createIssueJiraWebhooks
+    events:
+      - http:
+          path: webhooks/jira/issues/{issueId}
+          method: post

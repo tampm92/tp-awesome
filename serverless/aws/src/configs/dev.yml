@@ -1,0 +1,13 @@
+NAME: serverless-aws-starter
+ENV: dev
+REGION: ${self:custom.region}
+JIRA_BASE_URL: https://itap-staging.atlassian.net/rest/api/3
+JIRA_TOKEN: Basic a2lldEBraWV0bmguY29tOkRMenJhZE05YkhPTk1sYzBhVVR0ODk3RA==
+DIRECTORY_TEMP: /tmp/itap/store-temp
+ISSUE_TYPE: Bug
+ISSUE_LINK_TYPE: Duplicate
+URL_CF_NAME: customfield_10027
+RIGHT_CF_NAME: customfield_10029
+WRONG_CF_NAME: customfield_10030
+IGNORED_CF_NAME: customfield_10031
+EXCEPTIONS_CF_NAME: customfield_10032
