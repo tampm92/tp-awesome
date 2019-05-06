@@ -1,6 +1,6 @@
 # dashboard-urban-sketch
 
-> My bedazzling Nuxt.js project
+> More info [here](https://github.com/coreui/coreui-free-vue-admin-template)
 
 ## Build Setup
 
