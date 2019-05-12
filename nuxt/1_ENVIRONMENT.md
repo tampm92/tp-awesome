@@ -11,12 +11,9 @@ yarn add cross-env
 ```bash
 "scripts": {
     "dev": "nuxt",
-    "build": "cross-env NODE_ENV=staging nuxt build",
-    "build-prod": "cross-env NODE_ENV=production nuxt build",
-    "start": "cross-env NODE_ENV=staging nuxt start",
-    "start-prod": "cross-env NODE_ENV=production nuxt start",
-    "generate": "cross-env NODE_ENV=staging nuxt generate",
-    "generate-prod": "cross-env NODE_ENV=production nuxt generate"
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "start": "cross-env NODE_ENV=production nuxt start",
+    "generate": "cross-env NODE_ENV=production nuxt generate",
 },
 ```
 

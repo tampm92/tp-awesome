@@ -32,6 +32,6 @@ css: [
 ],
 ```
 
-## Full dashboard project
+## More TIPs
 
-> Please see on `nuxt-dashboard-example` project
+> See other file `*.md`
