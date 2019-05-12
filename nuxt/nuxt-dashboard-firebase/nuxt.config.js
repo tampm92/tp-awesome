@@ -6,12 +6,7 @@ import * as dotenv from 'dotenv';
  * Load .env file or .env.[NODE_ENV] file.
  */
 const NODE_ENV = process.env.NODE_ENV;
-let fileNameEnv = '';
-if (!!!NODE_ENV || NODE_ENV === 'development') {
-  fileNameEnv = '.env';
-} else {
-  fileNameEnv = `.env.${NODE_ENV}`;
-}
+let fileNameEnv = '.env' + (!!!NODE_ENV || NODE_ENV === 'development' ? '' : `.${NODE_ENV}`);
 dotenv.config({ path: path.join(process.cwd(), fileNameEnv) });
 
 export default {
