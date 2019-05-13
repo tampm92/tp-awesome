@@ -1,7 +1,5 @@
 # TP Awesome Nuxt
 
-[The topic use this template](https://github.com/coreui/coreui-free-vue-admin-template)
-
 ![Schema](https://nuxtjs.org/nuxt-schema.svg)
 
 ## Starter project
@@ -13,23 +11,41 @@ yarn create nuxt-app <project-name>
 yarn run dev
 ```
 
-- Create file `style.scss` in folder `assets/scss`
+## Config style
 
-- Config style: SCSS, Bootstrap, [Bootstrap Vue](https://bootstrap-vue.js.org/docs/)
+- [Bootstrap Vue](https://bootstrap-vue.js.org/docs/)
+- [Style Resources Module](https://github.com/nuxt-community/style-resources-module)
+
+### Install libs
 
 ```bash
-# install libs
-yarn add sass-loader
-yarn add node-sass
+yarn add sass-loader node-sass @nuxtjs/style-resources
 yarn add bootstrap-vue
-# add config to file nuxt.config.js
-modules: [
-    'bootstrap-vue/nuxt'
-],
+```
+
+### Add files
+
+* Create files in folder `assets/scss`
+    + `global.scss`
+    + `_variables.scss`
+    + `_mixins.scss`
+
+### Add config to file nuxt.config.js
+
+```bash
 css: [
-    /* Import Core SCSS */
-    { src: '~/assets/scss/style.scss', lang: 'scss' }
+    '~/assets/scss/global.scss'
 ],
+modules: [
+    '@nuxtjs/style-resources',
+    'bootstrap-vue/nuxt',
+],
+styleResources: {
+    scss: [
+      '~/assets/scss/_variables.scss',
+      '~/assets/scss/_mixins.scss'
+    ]
+}
 ```
 
 ## More TIPs

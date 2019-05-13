@@ -1,0 +1,24 @@
+// Import styles
+@import "core/coreui";
+// ie fixes
+@import "ie-fix";
+
+// Here you can add other styles
+.animated {
+  animation-duration: 0.2s;
+}
+
+.sidebar .nuxt-link-exact-active {
+  color: #fff;
+  background: #3a4248;
+}
+
+.sidebar-minimized .sidebar .nav-dropdown-items .nav-item .nav-link {
+  padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .sidebar-minimized .sidebar section :not(.nav-dropdown-items) > .nav-item:last-child::after {
+    display: none;
+  }
+}

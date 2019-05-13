@@ -1,6 +1,6 @@
 # dashboard-urban-sketch
 
-> More info [here](https://github.com/coreui/coreui-free-vue-admin-template)
+[The topic use this template](https://github.com/coreui/coreui-free-vue-admin-template)
 
 ## Build Setup
 

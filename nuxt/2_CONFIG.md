@@ -1,5 +1,7 @@
 # Add config
 
+> [@nuxtjs/dotenv](https://github.com/nuxt-community/dotenv-module)
+
 ## Install lib
 
 ```bash
