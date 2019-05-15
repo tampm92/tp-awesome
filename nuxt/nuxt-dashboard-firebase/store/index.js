@@ -1,3 +1,7 @@
+import {
+  vuexfireMutations,
+} from 'vuexfire'
+
 import * as types from './mutation-types'
 
 export const state = () => ({
@@ -5,6 +9,7 @@ export const state = () => ({
 })
 
 export const mutations = {
+  ...vuexfireMutations,
   [types.BEGIN_LOADING](state, payload) {
     state.isLoading = true;
   },

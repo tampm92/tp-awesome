@@ -1,6 +1,18 @@
 # nuxt-dashboard-firebase
 
-> My cat&#39;s pajamas Nuxt.js project
+> A TaMy Project Awesome for Nuxt Dashboard Firebase
+
+## Features
+
+- **Vue** [link](https://vuejs.org/).
+- **Vuex** [link](https://vuex.vuejs.org/).
+- **Nuxt** [link](https://nuxtjs.org/).
+- **bootstrap-vue** [link](https://bootstrap-vue.js.org/docs/).
+- **coreui-free-vue-admin-template** [link](https://github.com/coreui/coreui-free-vue-admin-template).
+- **Nuxt style-resources** [link](https://github.com/nuxt-community/style-resources-module).
+- **Nuxt dotenv** [link](https://github.com/nuxt-community/dotenv-module).
+- **Vue toasted** [link](https://github.com/shakee93/vue-toasted).
+- **Vuexfire** [link](https://vuefire.vuejs.org/).
 
 ## Build Setup
 

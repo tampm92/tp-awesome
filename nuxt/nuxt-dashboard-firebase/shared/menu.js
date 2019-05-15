@@ -7,17 +7,17 @@ export default {
       icon: 'icon-speedometer'
     },
     {
-      name: 'Customers',
-      url: '/customers',
+      name: 'Users',
+      url: '/users',
       icon: 'icon-user',
       children: [{
-        url: "/customers",
+        url: "/users",
         name: "List",
       },{
-        url: "/customers/add",
+        url: "/users/add",
         name: "Add",
       }, {
-        url: "/customers/:slug",
+        url: "/users/:slug",
         name: "Review",
         attributes: { hidden: true },
       }]
