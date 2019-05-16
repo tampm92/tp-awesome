@@ -6,7 +6,7 @@ import {
 import {
   db,
   FieldValue
-} from '~/shared/db'
+} from '~/shared/fireinit'
 import * as types from './mutation-types'
 
 const usersCollection = db.collection('users');
@@ -29,7 +29,6 @@ export const actions = {
 
     try {
       await bindFirestoreRef('list', usersCollection);
-      Vue.toasted.success('Add user success');
     } catch (error) {
       Vue.toasted.error(error.message || error);
     }
@@ -46,7 +45,6 @@ export const actions = {
 
     try {
       await bindFirestoreRef('detail', usersCollection.doc(actionData.id));
-      Vue.toasted.success('Add user success');
     } catch (error) {
       Vue.toasted.error(error.message || error);
     }

@@ -13,6 +13,7 @@
 - **Nuxt dotenv** [link](https://github.com/nuxt-community/dotenv-module).
 - **Vue toasted** [link](https://github.com/shakee93/vue-toasted).
 - **Vuexfire** [link](https://vuefire.vuejs.org/).
+- **Firebase Auth** [link](https://www.davidroyer.me/blog/nuxtjs-firebase-auth/).
 
 ## Build Setup
 

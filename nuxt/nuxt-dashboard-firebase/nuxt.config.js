@@ -67,17 +67,18 @@ export default {
    */
   plugins: [
     '~/plugins/vue-toasted',
+    '~/plugins/fireauth.js'
   ],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/style-resources',
-    'bootstrap-vue/nuxt',
     ['@nuxtjs/dotenv', {
       filename: fileNameEnv
-    }]
+    }],
+    '@nuxtjs/style-resources',
+    'bootstrap-vue/nuxt'
   ],
 
   styleResources: {
@@ -85,6 +86,10 @@ export default {
       '~/assets/scss/_variables.scss',
       '~/assets/scss/_mixins.scss'
     ]
+  },
+
+  router: {
+    middleware: 'router-auth'
   },
 
   /*
