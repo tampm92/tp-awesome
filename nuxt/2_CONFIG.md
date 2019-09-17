@@ -31,23 +31,17 @@ APP_NAME=production
 - Add config to `nuxt.config.js`
 
 ```bash
+import * as path from 'path';
+import * as dotenv from 'dotenv';
+
 /**
  * Load .env file or .env.[NODE_ENV] file.
  */
 const NODE_ENV = process.env.NODE_ENV;
-let fileNameEnv = '';
-if (!!!NODE_ENV || NODE_ENV === 'development') {
-  fileNameEnv = '.env';
-} else {
-  fileNameEnv = `.env.${NODE_ENV}`;
-}
-
-export default {
-  modules: [
-    'bootstrap-vue/nuxt',
-    [ '@nuxtjs/dotenv', { filename: fileNameEnv } ]
-  ]
-}
+let fileNameEnv = '.env' + (!!!NODE_ENV || NODE_ENV === 'development' ? '' : `.${NODE_ENV}`);
+dotenv.config({
+  path: path.join(process.cwd(), fileNameEnv)
+});
 ```
 
 ## Use
