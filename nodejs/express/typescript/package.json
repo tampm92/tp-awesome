@@ -1,0 +1,24 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "tamphan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "express-validator": "^2.20.8",
+    "jsonwebtoken": "^7.0.1",
+    "lodash": "^4.13.1",
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.3",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.4"
+  }
+}

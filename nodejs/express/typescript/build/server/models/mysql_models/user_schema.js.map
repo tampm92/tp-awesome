@@ -1,0 +1,1 @@
+{"version":3,"file":"user_schema.js","sourceRoot":"","sources":["../../../../server/models/mysql_models/user_schema.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAOb,iBAAS,UAAU,SAAoB,EAAE,SAAoB;IAC3D,IAAI,IAAI,GAAG,SAAS,CAAC,MAAM,CAAC,MAAM,EAAE;QAClC,QAAQ,EAAE,SAAS,CAAC,MAAM;QAC1B,QAAQ,EAAE,SAAS,CAAC,MAAM;KAC3B,CAAC,CAAC;IAEH,MAAM,CAAC,IAAI,CAAC;AACd,CAAC,CAAC"}
