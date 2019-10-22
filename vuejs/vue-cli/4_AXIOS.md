@@ -2,19 +2,19 @@
 
 > Document [here](https://github.com/axios/axios)
 
-1. Install lib
+## Install lib
 
 ```bash
 yarn add axios
 ```
 
-2. Update `.env`
+## Update `.env`
 
 ```bash
 VUE_APP_API_BASE_URL=reqres.in/api
 ```
 
-3. Update `src/config.js`
+## Update `src/config.js`
 
 ```ts
 export default {
@@ -27,7 +27,7 @@ export default {
 };
 ```
 
-4. Create `src/api.js`
+## Create `src/api.js`
 
 ```ts
 import axios from 'axios'
@@ -41,7 +41,7 @@ const axiosApi = axios.create({
 export default axiosApi;
 ```
 
-5. Create `src/services/UserService.js`
+## Create `src/services/UserService.js`
 
 ```ts
 import Api from '../api'
@@ -56,7 +56,7 @@ export default {
 }
 ```
 
-6. Using in action store
+## Using in action store
 
 ```ts
 // add service
@@ -85,7 +85,7 @@ async getUserDetal(context, actionData) {
 },
 ```
 
-7. Call in view to test
+## Call in view to test
 
 - Update `src/views/Home.vuew`
 

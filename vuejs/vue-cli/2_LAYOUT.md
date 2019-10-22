@@ -1,6 +1,6 @@
 # Add layout
 
-1. Create 3 file layout
+## Create 3 file layout
 
 - `layouts/layout.js` - auto load layout
 
@@ -79,7 +79,7 @@ export default {
 </script>
 ```
 
-2. Create file header `src/components/partials/Header.vue`
+## Create file header `src/components/partials/Header.vue`
 
 ```html
 <template>
@@ -99,7 +99,7 @@ export default {
 </style>
 ```
 
-3. Create file footer `src/components/partials/Footer.vue`
+## Create file footer `src/components/partials/Footer.vue`
 
 ```html
 <template>
@@ -119,7 +119,7 @@ export default {
 </style>
 ```
 
-4. Update store `src/store/index.js`
+## Update store `src/store/index.js`
 
 ```ts
 state: {
@@ -146,7 +146,7 @@ actions: {
 }
 ```
 
-5. Update `src/App.vue`
+## Update `src/App.vue`
 
 ```html
 <template>
@@ -177,7 +177,7 @@ export default {
 </script>
 ```
 
-5. Update `src/main.js`
+## Update `src/main.js`
 
 ```ts
 import Vue from 'vue'
@@ -199,7 +199,7 @@ new Vue({
 
 ```
 
-6. Change views to test layout
+## Change views to test layout
 
 - Update `src/views/Home.vue` with defautl layout
 

@@ -2,7 +2,7 @@
 
 > Document [here](https://vuetifyjs.com/en/getting-started/quick-start)
 
-1. Install by Vue CLI
+## Install by Vue CLI
 
 ```bash
 vue add vuetify
@@ -17,7 +17,7 @@ vue add vuetify
 # ? Select locale English
 ```
 
-2. Update view
+## Update view
 
 - `App.vue`
 

@@ -1,6 +1,6 @@
 # Steps new project with Vue CLI
 
-0. Folder structure
+## Folder structure
 
 ```bash
 .
@@ -26,9 +26,7 @@
 ├── vue.config.js
 ```
 
-1. Go to folder
-
-2. Create project
+## Create project
 
 - By command line
 
@@ -44,25 +42,25 @@ vue create tp-project
 vue ui
 ```
 
-3. Go to project folder
+## Go to project folder
 
 ```bash
 cd tp-project
 ```
 
-4. Run project on local with `development` mode
+## Run project on local with `development` mode
 
 ```bash
 yarn serve
 ```
 
-5. Buld project with `production` mode
+## Buld project with `production` mode
 
 ```bash
 yarn build
 ```
 
-6. Add environment and config file
+## Add environment and config file
 
 - Create file `.env` with content
 
@@ -81,7 +79,7 @@ VUE_APP
 VUE_APP_TITLE=TP Project (production)
 ```
 
-7. Create file `src/config.js` with content
+## Create file `src/config.js` with content
 
 ```ts
 export default {
@@ -93,7 +91,7 @@ export default {
 };
 ```
 
-8. Lauch web and test
+## Lauch web and test
 
 - Change content in file `src/App.vue`
 

@@ -2,13 +2,13 @@
 
 > We will use [vue-loading-overlay](https://github.com/ankurk91/vue-loading-overlay)
 
-1. Install lib
+## Install lib
 
 ```bash
 yarn add vue-loading-overlay
 ```
 
-2. Update `src/App.vue`
+## Update `src/App.vue`
 
 ```html
 <template>
@@ -40,7 +40,7 @@ export default {
 </script>
 ```
 
-3. Update `src/store/index.js`
+## Update `src/store/index.js`
 
 ```ts
 import Vue from 'vue'
@@ -84,7 +84,7 @@ export default new Vuex.Store({
 })
 ```
 
-4. Use when call http
+## Use when call http
 
 ```bash
 # call in action store
