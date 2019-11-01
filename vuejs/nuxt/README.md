@@ -1,5 +1,7 @@
 # TP Awesome Nuxt
 
+> This awesome is using BootstrapVue
+
 ![Schema](https://nuxtjs.org/nuxt-schema.svg)
 
 ## Starter project
@@ -11,26 +13,26 @@ yarn create nuxt-app <project-name>
 yarn run dev
 ```
 
-## Config style
+## Documents
 
 - [Bootstrap Vue](https://bootstrap-vue.js.org/docs/)
 - [Style Resources Module](https://github.com/nuxt-community/style-resources-module)
 
-### Install libs
+## Install libs
 
 ```bash
 yarn add sass-loader node-sass @nuxtjs/style-resources
 yarn add bootstrap-vue
 ```
 
-### Add files
+## Add files
 
 * Create files in folder `assets/scss`
     + `global.scss`
     + `_variables.scss`
     + `_mixins.scss`
 
-### Add config to file nuxt.config.js
+## Udpdate config to file nuxt.config.js
 
 ```bash
 css: [

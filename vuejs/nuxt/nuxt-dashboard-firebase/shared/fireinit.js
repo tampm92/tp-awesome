@@ -14,4 +14,3 @@ export const {
   GeoPoint,
   FieldValue
 } = Firebase.firestore;
-

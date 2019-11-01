@@ -13,7 +13,7 @@ yarn add cross-env
     "dev": "nuxt",
     "build": "cross-env NODE_ENV=production nuxt build",
     "start": "cross-env NODE_ENV=production nuxt start",
-    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "generate": "cross-env NODE_ENV=production nuxt generate"
 },
 ```
 

@@ -42,11 +42,18 @@ let fileNameEnv = '.env' + (!!!NODE_ENV || NODE_ENV === 'development' ? '' : `.$
 dotenv.config({
   path: path.join(process.cwd(), fileNameEnv)
 });
+
+# add module
+modules: [
+  ['@nuxtjs/dotenv', {
+    filename: fileNameEnv
+  }]
+],
 ```
 
 ## Use
 
-- Create file `env.js` in folder `~/shared` with content
+- Create file `config.js` in folder `~/shared` with content
 
 ```bash
 import * as pkg from '../package.json';
@@ -59,20 +66,16 @@ export default {
   isProduction: process.env.NODE_ENV === 'production',
   isTest: process.env.NODE_ENV === 'test',
   isDevelopment: !!!process.env.NODE_ENV || process.env.NODE_ENV === 'development',
-  app: {
-    name: process.env.APP_NAME,
-    version: pkg.version,
-    description: pkg.description
-  }
+  appName: process.env.APP_NAME
 };
 ```
 
 - Use:
 
 ```bash
-import env from '~/shared/env.js'
+import config from '~/shared/config.js'
 
-console.log(env.app);
+console.log(config.app);
 ```
 
 ## Use in nuxt.config.js
