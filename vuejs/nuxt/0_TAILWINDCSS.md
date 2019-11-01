@@ -51,6 +51,11 @@ module.exports = {
 ## Update config to file nuxt.config.js
 
 ```bash
+loading: {
+    color: '#42b883',
+    height: '5px',
+    duration: 10000
+},
 css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/scss/global.scss',
