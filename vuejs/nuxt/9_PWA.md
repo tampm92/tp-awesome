@@ -1,4 +1,8 @@
-# TP Awesome Nuxt
+# TP Awesome Nuxt-PWA
+
+## Documents
+
+- [Nuxt PWA](https://pwa.nuxtjs.org/setup.html)
 
 ## Starter project
 
@@ -9,17 +13,13 @@ yarn create nuxt-app <project-name>
 yarn run dev
 ```
 
-## Documents
-
-- [Nuxt PWA](https://pwa.nuxtjs.org/setup.html)
-
-### Install libs
+## Install libs
 
 ```bash
 yarn add @nuxtjs/pwa
 ```
 
-### Update config to file nuxt.config.js
+## Update config to file nuxt.config.js
 
 ```bash
 modules: [
